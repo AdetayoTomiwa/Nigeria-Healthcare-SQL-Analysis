@@ -1,6 +1,6 @@
 # Nigeria Healthcare Infrastructure & Disease Burden Analysis
 ### A SQL-based investment prioritisation framework
-
+![Dashboard Overview](assets/dashboard_demo.gif)
 ---
 
 ## Project Overview
@@ -92,9 +92,10 @@ TB incidence has remained essentially flat across the entire observation period 
 
 **Q7. Which states require the most urgent healthcare investment?**
 The HIPS composite score ranks all 37 states by infrastructure need. Kano ranks first; Anambra is the only state classified as *Stable*.
+![Infrastructure Dashboard](assets/page1_screenshot.png)
+![Disease Burden Dashboard](assets/page2_screenshot.png)
 
 ---
-
 ## The HIPS Scoring Framework
 
 The Healthcare Investment Priority Score (HIPS) is a composite index constructed to move beyond single-metric rankings and capture the multi-dimensional nature of healthcare access failure. A state does not score Critical simply because it has few facilities, it scores Critical because multiple dimensions of access are simultaneously compromised.
