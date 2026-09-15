@@ -37,7 +37,7 @@ This analysis interrogates that complexity. It asks not just *how many* faciliti
 - **PostgreSQL** — Relational database management and all analytical querying
 - **pgAdmin 4** — Query execution and database administration interface
 - **Python** (pandas, psycopg2, openpyxl) — Data ingestion and loading pipeline
-- **Power BI** — Dashboard visualisation of final outputs *(in development)*
+- **Power BI** — Dashboard visualisation of final outputs
 
 ---
 
@@ -138,7 +138,7 @@ Each component is normalised to a 0–100 scale where **100 represents the great
 **Known Limitations:**
 - Population data is based on 2006 census projections capped at 2016. Results would be meaningfully refined using 2023 census data, which is now available from the NBS.
 - Disease indicators are available at the national level only. State-level disease disaggregation essential for a true burden-versus-capacity analysis was not available from public WHO sources at the time of this analysis.
-- The FCT tertiary facility count (zero) is inconsistent with ground-level reality and likely reflects a data registration issue in the GRID3 dataset rather than an actual absence of tertiary care.s
+- The FCT tertiary facility count (zero) is inconsistent with ground-level reality and likely reflects a data registration issue in the GRID3 dataset rather than an actual absence of tertiary care.
 
 ---
 
@@ -147,21 +147,21 @@ Each component is normalised to a 0–100 scale where **100 represents the great
 ```
 nigeria-healthcare-sql-analysis/
 │
-├── data/
-│   └── raw/ 
-|        └──  original dataset                              
-|        # Original source datasets
+├── Data/
+│   └── Raw/                        # Original source datasets
 │
-├── queries/
+├── Queries/
 │   ├── 01_facility_count_by_state.sql
 │   ├── 02_facilities_per_100k_access_tiers.sql
 │   ├── 03_public_vs_private_equity_risk.sql
 │   ├── 04_tertiary_facility_gap.sql
 │   ├── 05_malaria_trend_analysis.sql
-│   ├──06_tb_incidence_vs_treatment_coverage.sql
-├──07_hips_healthcare_investment_priority_score.sql
+│   ├── 06_tb_incidence_vs_treatment_coverage.sql
+│   └── 07_hips_healthcare_investment_priority_score.sql
 │
-├── outputs/                        # CSV exports of all query results
+├── Outputs/                        # CSV exports of all query results
+│
+├── assets/                         # Dashboard screenshots and GIF
 │
 └── README.md
 ```
